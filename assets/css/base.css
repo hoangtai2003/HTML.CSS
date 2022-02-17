@@ -69,16 +69,31 @@ html {
 /* button style */
 .btn {
     min-width: 142px;
-    height: 36px;
+    height: 34px;
     text-decoration: none;
     border: none;
     border-radius: 2px;
     font-size: 1.4rem;
     padding: 0;
+    cursor: pointer;
+    color: var(--text-color);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.btn:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+.btn.btn--size-s {
+    height: 30px;
+    font-size: 12px;
     
 }
 .btn.btn--primary {
     color: var(--white-color);
     background-color: var(--primary-color);
 }
+
 
