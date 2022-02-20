@@ -1,5 +1,5 @@
 .header {
-    height: 120px;
+    height: var(--header-height);
     background-image: linear-gradient(0, #fe6433, #f53e2d);
 }
 .header__navbar {
@@ -231,6 +231,9 @@ animation: fadein ease-in 0.3s;
 /* authen modal */
 .auth-form{
     width: 400px;
+    border-radius: 5px;
+    background-color: var(--white-color);
+    overflow: hidden;
 }
 .auth-form__container{
     padding: 0 32px;
@@ -239,11 +242,13 @@ animation: fadein ease-in 0.3s;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 12px;
+    margin: 10px;
 
 }
 .auth-form__heading {
-    font-size: 2.2rem;
-    font-weight: 400 ;
+    font-size: 1.8rem;
+    font-weight: 550 ;
     color: var(--text-color);
 }
 .auth-form__switch-btn {
@@ -294,16 +299,19 @@ animation: fadein ease-in 0.3s;
 }
 .auth-form__socials {
     background-color: #F5F5F5;
-    padding: 12px 36px;
+    padding: 14px 36px;
     display: flex;
     justify-content: space-between;
     color: white;
+    margin-top: 15px;
    
 }
 .auth-form__socials {
     font-size: 1.8rem;
+    
 }
 .auth-form__socials--facebook{
+    color: var(--white-color);
     background-color: #3A5A98;
 }
 .auth-form__socials--facebook
@@ -311,4 +319,59 @@ animation: fadein ease-in 0.3s;
     color: var(--white-color);
    
 }
+.auth-form__socials-title {
+    margin: 0 15px;
+}
+.auth-form__socials--google {
+    color: #666;
+    background-color: var(--white-color);
+}
+.auth-form__help {
+    display: flex;
+    justify-content: flex-end;
+}
+.auth-form__help-link {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: #939393;
+}
+.auth-form__help-separate {
+    display: block;
+    border-left: 1px solid #EAEAEA;
+    height: 14px;
+    margin: 2px 16px 0;
+}
+.auth-form__help-forgot{
+    color: var(--primary-color);
+}
+ /* header with search  */
+.header-with-search {
+    height: var(--header-with-search-height);
+    display: flex;
+    align-items: baseline;
+   
+}
+.header__logo{
+    width: 200px;
 
+}
+.header__logo-img{
+    width: 150px;
+    color: var(--white-color);
+}
+.header__search {
+    flex: 1;
+    height: 40px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+
+}
+.header__cart {
+   width: 150px;
+   text-align: center;
+}
+.header__cart-icon {
+    color: var(--white-color);
+    font-size: 2.4rem;
+}
